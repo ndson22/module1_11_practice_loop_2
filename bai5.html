@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tinh_lai_ngan_hang</title>
+</head>
+<body>
+	<label>So tien ban dau: </label>
+	<input type="number" id="origin">
+	<label>So thang cho vay: </label>
+	<input type="number" id="month">
+	<label>Lai suat hang thang:</label>
+	<input type="number" id ="laiSuat" >
+	<button id="cal">Calculator</button>
+
+
+<script type="text/javascript">
+	
+	document.getElementById("cal").addEventListener('click',function(){
+		let originMoney = parseFloat(document.getElementById('origin').value);
+		let month = parseFloat(document.getElementById('month').value);
+		let laiSuat = parseFloat(document.getElementById('laiSuat').value);
+		let result = 1;
+		for(let i = 1;i<=month;i++){
+			originMoney = originMoney*(1+laiSuat);
+
+		}
+		document.write("Lai suat ngan hang = " + originMoney);
+	})
+</script>
+</body>
+</html>

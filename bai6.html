@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tinh_lai_ngan_hang</title>
+</head>
+<body>
+
+
+
+<script type="text/javascript">
+	let str = "";
+	for(let i=1;i<=6;i++){
+		if(i==1){
+			for(let j = 1;j<=7;j++){
+				if(j==1 || j == 4 || j ==7){
+					document.write("&ensp;");
+				}
+				else document.write("*");
+			}
+		}
+		if(i==2 || i==3){
+			for(let k = 1;k<=7;k++){
+				document.write("*");
+			}
+		}
+		if(i==4){
+			for(let m = 1;m<=7;m++){
+				if(m==1||m==7){
+					document.write("&ensp;");
+				}
+				else document.write("*");
+			}
+		}
+		if (i==5){
+			for(let n = 1;n<=7;n++){
+				if(n == 3 || n==4 || n==5){
+					document.write("*");
+				}
+				else document.write("&ensp;");
+			}
+		}
+		if(i==6){
+			for(let qw = 1;qw<=7;qw++){
+				if(qw ==4){
+					document.write("*");
+				}
+				else document.write("&ensp;");
+			}
+		}
+		document.write("<br>")
+	}
+	
+</script>
+</body>
+</html>
